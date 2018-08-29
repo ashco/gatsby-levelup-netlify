@@ -14,7 +14,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
+    <Header data={data} />
     <div
       style={{
         margin: '0 auto',
@@ -41,6 +41,11 @@ export const query = graphql`
       siteMetadata {
         title
         description
+      }
+    }
+    background: imageSharp(id: { regex: "/bg.jpg/" }) {
+      sizes(maxWidth: 1240, grayscale: false) {
+        ...GatsbyImageSharpSizes
       }
     }
   }
