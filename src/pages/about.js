@@ -4,7 +4,7 @@ class About extends Component {
   render() {
     return (
       <div>
-        <h1>About Us</h1>
+        <h1>About Me</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
           pariatur facilis esse, vel dolores dolorum fugit. Commodi, sit? Eaque
