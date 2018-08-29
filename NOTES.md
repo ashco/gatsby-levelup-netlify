@@ -6,3 +6,4 @@
   - added in styled components. plugin is needed to prevent styles from being applied on page load, instead bakes it into main static file
 - `export const query` - run this on page for magic stuff. will automatically run query on component
 - Will typically want to name all graphql queries.. `query SiteMeta {`
+- cannot do graphql queries in components folder, only layouts and pages.. unless you pass it in as a prop
