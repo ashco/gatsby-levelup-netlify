@@ -7,3 +7,4 @@
 - `export const query` - run this on page for magic stuff. will automatically run query on component
 - Will typically want to name all graphql queries.. `query SiteMeta {`
 - cannot do graphql queries in components folder, only layouts and pages.. unless you pass it in as a prop
+- `yarn add gatsby-image gatsby-transformer-sharp gatsby-plugin-sharp` - lets you add in images

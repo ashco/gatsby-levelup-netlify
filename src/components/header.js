@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import logo from '../images/logo.svg'
 
 const HeaderWrapper = styled.div`
-  background: coral;
+  background: #d30c35;
   margin-bottom: 1.45rem;
   h1 {
     img {
@@ -20,7 +20,7 @@ const HeaderContainer = styled.div`
   padding: 1.45rem 1.0875rem;
 `
 
-const Header = ({ data }) => (
+const Header = ({ siteTitle }) => (
   <HeaderWrapper>
     <HeaderContainer>
       <h1 style={{ margin: 0 }}>
@@ -33,8 +33,8 @@ const Header = ({ data }) => (
         >
           <img src={logo} alt="logo" />
         </Link>
+        {siteTitle}
       </h1>
-      <p>{data.site.siteMetadata.title}</p>
       <nav>
         <ul>
           <li>
