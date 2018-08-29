@@ -6,7 +6,6 @@ import Img from 'gatsby-image'
 import logo from '../images/logo.svg'
 
 const HeaderWrapper = styled.div`
-  background: #a39497;
   margin-bottom: 1.45rem;
   overflow: hidden;
   position: relative;
@@ -22,6 +21,7 @@ const HeaderContainer = styled.div`
   margin: 0 auto;
   max-width: 960px;
   padding: 1.45rem 1.0875rem;
+  /* position: relative; */
   z-index: 2;
 `
 
@@ -61,10 +61,11 @@ const Header = ({ data }) => (
       <Img
         style={{
           position: 'absolute',
-          left: '0',
-          top: '0',
+          left: 0,
+          top: 0,
           width: '100%',
           height: '100%',
+          zIndex: -1,
         }}
         sizes={data.background.sizes}
       />
