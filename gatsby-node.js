@@ -40,8 +40,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       // create new page for each slug found
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
+          // can use this fnc to create pages outside of promises
           path: node.fields.slug,
-          component: path.resolve('./src/pages/about.js'),
+          component: path.resolve('./src/posts/PostPage.js'),
           context: {
             // variable you assign to graphql to pass
             slug: node.fields.slug,
