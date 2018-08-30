@@ -3,6 +3,8 @@ title: 'Tutorial Notes'
 date: '2018-08-30'
 ---
 
+These are notes from the tutorial.
+
 - pages: files that equate to actual pages on application.
 - put images in src folder so webpack can take care of doing things to it. Don't put in public.
 - `yarn add styled-components gatsby-plugin-styled-components`
@@ -19,3 +21,4 @@ Deploying
 - `gatsby build` - builds out site
 - `gatsby serve` - runs server and builds public folder contents
 - gh-pages: `"deploy": "gatsby build --prefix-paths && gh-pages -d public"`
+- add in `pathPrefix: '/gatsby-levelup',` to config in order for deployed site to know what its prefix will be (ex: `https://ashco.github.io/gatsby-levelup/`)
