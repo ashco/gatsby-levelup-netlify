@@ -1,4 +1,7 @@
-# Tutorial Notes
+---
+title: 'Tutorial Notes'
+date: '2018-08-30'
+---
 
 - pages: files that equate to actual pages on application.
 - put images in src folder so webpack can take care of doing things to it. Don't put in public.
