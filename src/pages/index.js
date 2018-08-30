@@ -1,18 +1,17 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import PostListing from '../components/Posts/PostListing'
 
 const IndexPage = ({ data }) => (
   <div>
-    <h1>Hi blog people</h1>
-    <p>{data.site.siteMetadata.title}</p>
-    <p>{data.site.siteMetadata.description}</p>
-    {data.allMarkdownRemark.edges.map(({ node }) => {
-      return <PostListing post={node} />
-    })}
+    {/* <p>{data.site.siteMetadata.title}</p>
+    <p>{data.site.siteMetadata.description}</p> */}
+    <h2>Posts</h2>
+    {data.allMarkdownRemark.edges.map(({ node }) => (
+      <PostListing post={node} key={node.id} />
+    ))}
   </div>
 )
-
-const PostListing = () => <div>Hello</div>
 
 export default IndexPage
 
@@ -27,11 +26,13 @@ export const query = graphql`
     allMarkdownRemark {
       edges {
         node {
+          id
           frontmatter {
             title
             date(formatString: "MMMM DD YYYY")
           }
           html
+          excerpt(pruneLength: 280)
         }
       }
     }

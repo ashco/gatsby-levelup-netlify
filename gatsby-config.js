@@ -22,7 +22,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        excerpt_separator: `<!-- end -->`, // provides way to manually set excerpt range
+      },
+    },
     'gatsby-transformer-sharp', // allows images
     'gatsby-plugin-sharp',
   ],
