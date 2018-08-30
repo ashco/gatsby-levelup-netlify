@@ -42,7 +42,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         createPage({
           // can use this fnc to create pages outside of promises
           path: node.fields.slug,
-          component: path.resolve('./src/posts/PostPage.js'),
+          component: path.resolve('./src/components/Posts/PostPage.js'),
           context: {
             // variable you assign to graphql to pass
             slug: node.fields.slug,
