@@ -7,6 +7,7 @@ import Img from 'gatsby-image'
 import logo from '../images/logo.svg'
 
 const HeaderWrapper = styled.div`
+  background: #b53d60;
   margin-bottom: 1.45rem;
   overflow: hidden;
   position: relative;
@@ -22,8 +23,29 @@ const HeaderContainer = styled.div`
   margin: 0 auto;
   max-width: 960px;
   padding: 1.45rem 1.0875rem;
-  /* position: relative; */
+  position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: space-between;
+`
+
+const MainNav = styled.nav`
+  ul {
+    list-style: none;
+    display: flex;
+    li {
+      margin-left: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+      a {
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+          border-bottom: 3px solid #b53d60;
+        }
+      }
+    }
+  }
 `
 
 // doesn't work because Img is multi elements
@@ -94,7 +116,7 @@ class Header extends Component {
               <img src={logo} alt="logo" />
             </Link>
           </h1>
-          <nav>
+          <MainNav>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -103,19 +125,19 @@ class Header extends Component {
                 <Link to="/about">About</Link>
               </li>
             </ul>
-          </nav>
-          <Img
-            style={{
-              position: 'absolute',
-              left: 0,
-              top: 0,
-              width: '100%',
-              height: '100%',
-              zIndex: -1,
-            }}
-            sizes={data.background.sizes}
-          />
+          </MainNav>
         </HeaderContainer>
+        <Img
+          style={{
+            position: 'absolute',
+            left: 0,
+            top: 0,
+            width: '100%',
+            height: '100%',
+            opacity: 0.8,
+          }}
+          sizes={data.background.sizes}
+        />
       </HeaderWrapper>
     )
   }
