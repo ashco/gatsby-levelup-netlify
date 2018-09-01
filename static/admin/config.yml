@@ -1,5 +1,7 @@
 backend:
-  name: test-repo
+  # name: test-repo
+  name: github
+  repo: ashco/gatsby-levelup-netlify
 
 media_folder: static/assets
 
