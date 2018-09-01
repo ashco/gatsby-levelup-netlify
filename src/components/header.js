@@ -7,7 +7,7 @@ import Img from 'gatsby-image'
 import logo from '../images/logo.svg'
 
 const HeaderWrapper = styled.div`
-  background: #b53d60;
+  background: #606090;
   margin-bottom: 1.45rem;
   overflow: hidden;
   position: relative;
