@@ -5,6 +5,6 @@ image: /assets/ashco-logo.png
 ---
 What do you call a man at your front door who has no arms or legs? 
 
-
-
 Matt.
+
+![Logo](/assets/ashco-logo.png)
