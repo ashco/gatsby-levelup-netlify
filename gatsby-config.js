@@ -24,6 +24,14 @@ module.exports = {
       },
     },
     {
+      // Make images available to graphql
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'img',
+        path: `${__dirname}/static/assets`,
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         excerpt_separator: `<!-- end -->`, // provides way to manually set excerpt range

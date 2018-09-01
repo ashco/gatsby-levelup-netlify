@@ -15,8 +15,10 @@ These are notes from the tutorial.
 - `yarn add gatsby-image gatsby-transformer-sharp gatsby-plugin-sharp` - lets you add in images
 - Can do a lot of crazy things with imageSharp. can make images grayscale or have them compiled to a specific size
 - Research Gatsby plugin remark to learn more about handling md files
+- If you have wierd errors where things aren't showing up in directory, etc. delete cache file.
+- no spaces or . in file uploads or markdown will not pick up files
 
-Deploying
+###Deploying
 
 - `gatsby build` - builds out site
 - `gatsby serve` - runs server and builds public folder contents
