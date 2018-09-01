@@ -1,5 +1,5 @@
 ---
-title: 'The Second Postinging'
+title: 'The Second Posting'
 date: '2018-08-29'
 ---
 

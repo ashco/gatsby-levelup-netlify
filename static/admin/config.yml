@@ -4,7 +4,7 @@ backend:
   repo: ashco/gatsby-levelup-netlify
 
 media_folder: static/assets
-public_folder: /assets
+public_folder: /assets # this is where images will be getting paths from
 
 collections:
   - name: post
