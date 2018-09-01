@@ -14,7 +14,7 @@ const HeaderWrapper = styled.div`
   height: ${({ isHome }) => (isHome ? '70vh' : '24vh')};
   h1 {
     img {
-      height: 80px;
+      height: 120px;
     }
   }
 `

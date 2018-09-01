@@ -31,5 +31,6 @@ module.exports = {
     },
     'gatsby-transformer-sharp', // allows images
     'gatsby-plugin-sharp',
+    'gatsby-plugin-netlify-cms', // plugin to add netlify cms you idiot
   ],
 }
