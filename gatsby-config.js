@@ -32,13 +32,23 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      // Make images available to graphql
+      resolve: 'gatsby-source-contentful',
       options: {
-        excerpt_separator: `<!-- end -->`, // provides way to manually set excerpt range
+        spaceId: 'aa07zaigeqjr',
+        accessToken: '2c1ca8f493ba284be189fbb6b86532a21e08d5eaf5bafb5ef03a33fddb7a117a',
       },
     },
+    'gatsby-transformer-remark',
+    // {
+    //   resolve: 'gatsby-transformer-remark',
+    //   options: {
+    //     excerpt_separator: `<!-- end -->`, // provides way to manually set excerpt range
+    //   },
+    // },
     'gatsby-transformer-sharp', // allows images
     'gatsby-plugin-sharp',
-    'gatsby-plugin-netlify-cms', // plugin to add netlify cms you idiot
+    // 'gatsby-plugin-netlify-cms', // plugin to add netlify cms you idiot
+
   ],
 }
