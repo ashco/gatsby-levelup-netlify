@@ -22,3 +22,4 @@ Deploying
 - `gatsby serve` - runs server and builds public folder contents
 - gh-pages: `"deploy": "gatsby build --prefix-paths && gh-pages -d public"`
 - add in `pathPrefix: '/gatsby-levelup',` to config in order for deployed site to know what its prefix will be (ex: `https://ashco.github.io/gatsby-levelup/`)
+- setting up github login on netlify cms requires you go into gh settings and authorize app.
